@@ -43,6 +43,25 @@
         button:hover {
             background-color: #45a049;
         }
+        .discord-button {
+            background-color: #7289DA; /* Discord blue */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .discord-button img {
+            width: 20px; /* Adjust size of the logo */
+            margin-right: 5px;
+        }
+        .discord-button:hover {
+            background-color: #5b6eae; /* Darker shade on hover */
+        }
     </style>
 </head>
 <body>
@@ -50,7 +69,10 @@
         <h1>Welcome to trace.rip</h1>
         <p>Discord Message Scraper</p>
         <input type="text" placeholder="Search messages...">
-        <button onclick="alert('get friggen hacked trust frfr ong u buns this totally not ai gemenated rn')">Search</button>
+        <button onclick="alert('get friggen hacked trust frfr ong u buns this totally not ai gemenated rn, join discord for announce when released')">Search</button>
+        <button class="discord-button" onclick="window.open('https://discord.gg/a43YS7ZGsg', '_blank')">
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Discord_logo.svg" alt="Discord Logo"> Join Discord
+        </button>
     </div>
 </body>
 </html>
