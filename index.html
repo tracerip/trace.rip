@@ -125,35 +125,30 @@
     </div>
 
     <script>
-      let keySequence = "";
-      const targetSequence = "wowo";
-      const targetSequence2 = "amy";
+  let keySequence = "";
+  const targetSequence1 = "wowo";
+  const targetSequence2 = "amy";
 
-      document.addEventListener("keydown", function(event) {
-        keySequence += event.key.toLowerCase();
-        
-        if (keySequence.length > targetSequence.length) {
-          keySequence = keySequence.slice(-targetSequence.length);
-        }
-        
-        if (keySequence === targetSequence) {
-          window.location.href = "/wowo";
-          keySequence = "";
-        }
-      });
-
-        document.addEventListener("keydown", function(event) {
-        keySequence += event.key.toLowerCase();
-        
-        if (keySequence.length > targetSequence2.length) {
-          keySequence = keySequence.slice(-targetSequence2.length);
-        }
-        
-        if (keySequence === targetSequence2) {
-          window.location.href = "/amy";
-          keySequence = "";
-        }
-      });
-    </script>
+  document.addEventListener("keydown", function(event) {
+    keySequence += event.key.toLowerCase();
+    
+    // Check if the keySequence exceeds the length of the longest target sequence
+    if (keySequence.length > Math.max(targetSequence1.length, targetSequence2.length)) {
+      keySequence = keySequence.slice(-Math.max(targetSequence1.length, targetSequence2.length));
+    }
+    
+    // Check for the first target sequence
+    if (keySequence === targetSequence1) {
+      window.location.href = "/wowo";
+      keySequence = ""; // Reset the keySequence after a match
+    }
+    
+    // Check for the second target sequence
+    if (keySequence === targetSequence2) {
+      window.location.href = "/amy";
+      keySequence = ""; // Reset the keySequence after a match
+    }
+  });
+</script>
 </body>
 </html>
