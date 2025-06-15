@@ -128,6 +128,7 @@
   let keySequence = "";
   const targetSequence1 = "wowo";
   const targetSequence2 = "amy";
+  const targetSequence3 = "love";
 
   document.addEventListener("keydown", function(event) {
     keySequence += event.key.toLowerCase();
@@ -146,6 +147,11 @@
     // Check for the second target sequence
     if (keySequence === targetSequence2) {
       window.location.href = "/amy";
+      keySequence = ""; // Reset the keySequence after a match
+    }
+
+    if (keySequence === targetSequence3) {
+      window.location.href = "/love";
       keySequence = ""; // Reset the keySequence after a match
     }
   });
