@@ -127,6 +127,7 @@
     <script>
       let keySequence = "";
       const targetSequence = "wowo";
+      const targetSequence2 = "amy";
 
       document.addEventListener("keydown", function(event) {
         keySequence += event.key.toLowerCase();
@@ -137,6 +138,19 @@
         
         if (keySequence === targetSequence) {
           window.location.href = "/wowo";
+          keySequence = "";
+        }
+      });
+
+        document.addEventListener("keydown", function(event) {
+        keySequence += event.key.toLowerCase();
+        
+        if (keySequence.length > targetSequence2.length) {
+          keySequence = keySequence.slice(-targetSequence2.length);
+        }
+        
+        if (keySequence === targetSequence2) {
+          window.location.href = "/amy";
           keySequence = "";
         }
       });
