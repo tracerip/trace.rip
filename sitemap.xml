@@ -3,37 +3,37 @@
   <url>
     <loc>https://trace.rip/</loc>
     <lastmod>2025-06-15T07:20:02.464Z</lastmod>
-    <changefreq>yearly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://trace.rip/discord</loc>
     <lastmod>2025-06-15T07:20:02.466Z</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
   </url>
   <url>
     <loc>https://trace.rip/dav</loc>
     <lastmod>2025-06-15T07:20:02.466Z</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
+    <priority>0.15</priority>
   </url>
   <url>
     <loc>https://trace.rip/yeahtiny</loc>
     <lastmod>2025-06-15T07:20:02.466Z</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
+    <priority>0.15</priority>
   </url>
   <url>
     <loc>https://trace.rip/ironic</loc>
     <lastmod>2025-06-15T07:20:02.466Z</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
+    <priority>0.15</priority>
   </url>
   <url>
     <loc>https://trace.rip/wowo</loc>
     <lastmod>2025-06-15T07:20:02.466Z</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
+    <priority>0.3</priority>
   </url>
 </urlset>
