@@ -41,4 +41,12 @@
       <image:title>fmhy 88x31</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://trace.rip/</loc>
+    <image:image>
+      <image:loc>https://trace.rip/tor.gif</image:loc>
+      <image:caption>88x31 web graphic</image:caption>
+      <image:title>tor 88x31</image:title>
+    </image:image>
+  </url>
 </urlset>
