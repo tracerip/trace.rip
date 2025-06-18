@@ -126,6 +126,9 @@
                 <a href="https://fmhy.net/" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform duration-200">
                   <img src="https://trace.rip/fmhy.png" alt="FMHY" width="88" height="31" class="pixelated" />
                 </a>
+                <a href="https://www.torproject.org/" target="_blank" rel="noopener noreferrer" class="hover:scale-105 transition-transform duration-200">
+                  <img src="https://trace.rip/tor.gif" alt="TOR Project" width="88" height="31" class="pixelated" />
+                </a>
               </div>
             </div>
           </div>
@@ -146,26 +149,23 @@
   document.addEventListener("keydown", function(event) {
     keySequence += event.key.toLowerCase();
     
-    // Check if the keySequence exceeds the length of the longest target sequence
     if (keySequence.length > Math.max(targetSequence1.length, targetSequence2.length)) {
       keySequence = keySequence.slice(-Math.max(targetSequence1.length, targetSequence2.length));
     }
     
-    // Check for the first target sequence
     if (keySequence === targetSequence1) {
       window.location.href = "/wowo";
-      keySequence = ""; // Reset the keySequence after a match
+      keySequence = "";
     }
     
-    // Check for the second target sequence
     if (keySequence === targetSequence2) {
       window.location.href = "/amy";
-      keySequence = ""; // Reset the keySequence after a match
+      keySequence = "";
     }
 
     if (keySequence === targetSequence3) {
       window.location.href = "/love";
-      keySequence = ""; // Reset the keySequence after a match
+      keySequence = "";
     }
   });
 </script>
