@@ -1,3 +1,4 @@
 User-agent: *
 
 Sitemap: https://trace.rip/sitemap.xml
+Sitemap: https://trace.rip/sitemap-images.xml
