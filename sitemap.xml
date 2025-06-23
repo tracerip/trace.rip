@@ -15,32 +15,38 @@
   <url>
     <loc>https://trace.rip/tos</loc>
     <lastmod>2025-06-18T08:38:00Z</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://trace.rip/privacy</loc>
     <lastmod>2025-06-18T08:38:00Z</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://trace.rip/discord</loc>
     <lastmod>2025-06-22T18:37:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.25</priority>
+  </url>
+  <url>
+    <loc>https://trace.rip/telegram</loc>
+    <lastmod>2025-06-24T01:12:00Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.25</priority>
   </url>
   <url>
     <loc>https://trace.rip/x</loc>
-    <lastmod>2025-06-22T19:25:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
+    <lastmod>2025-06-24T01:12:00Z</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0</priority>
   </url>
   <url>
     <loc>https://trace.rip/bsky</loc>
     <lastmod>2025-06-22T19:25:00Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.1</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.25</priority>
   </url>
   <url>
     <loc>https://trace.rip/dav</loc>
