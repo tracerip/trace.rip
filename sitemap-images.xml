@@ -5,31 +5,39 @@
     <loc>https://trace.rip/amy</loc>
     <image:image>
       <image:loc>https://trace.rip/amy.gif</image:loc>
-      <image:caption>amy in discord vc</image:caption>
-      <image:title>amy</image:title>
+      <image:caption>Amy hanging out in Discord VC</image:caption>
+      <image:title>Amy</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://trace.rip</loc>
+    <image:image>
+      <image:loc>https://trace.rip/favicon.ico</image:loc>
+      <image:caption>Adin Ross in his iconic style</image:caption>
+      <image:title>Adin Ross</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://trace.rip/wowo</loc>
     <image:image>
       <image:loc>https://trace.rip/wowo.gif</image:loc>
-      <image:caption>wowo in discord vc</image:caption>
-      <image:title>wowo</image:title>
+      <image:caption>Wowo chilling in Discord VC</image:caption>
+      <image:title>Wowo</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://trace.rip/love</loc>
     <image:image>
       <image:loc>https://trace.rip/loverectangle.gif</image:loc>
-      <image:caption>amy and wowo in discord vc in a love rectangle</image:caption>
-      <image:title>love rectangle</image:title>
+      <image:caption>Amy and Wowo together in a Discord VC love rectangle</image:caption>
+      <image:title>Love Rectangle</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://trace.rip/</loc>
     <image:image>
       <image:loc>https://trace.rip/88x31.png</image:loc>
-      <image:caption>88x31 web graphic</image:caption>
+      <image:caption>trace.rip official 88x31 web button</image:caption>
       <image:title>trace.rip 88x31</image:title>
     </image:image>
   </url>
@@ -37,16 +45,16 @@
     <loc>https://trace.rip/</loc>
     <image:image>
       <image:loc>https://trace.rip/fmhy.png</image:loc>
-      <image:caption>88x31 web graphic</image:caption>
-      <image:title>fmhy 88x31</image:title>
+      <image:caption>FMHY 88x31 web button</image:caption>
+      <image:title>FMHY 88x31</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://trace.rip/</loc>
     <image:image>
       <image:loc>https://trace.rip/tor.gif</image:loc>
-      <image:caption>88x31 web graphic</image:caption>
-      <image:title>tor 88x31</image:title>
+      <image:caption>Tor Project 88x31 web button</image:caption>
+      <image:title>Tor 88x31</image:title>
     </image:image>
   </url>
 </urlset>
