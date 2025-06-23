@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://trace.rip</loc>
-    <lastmod>2025-06-22T18:37:00Z</lastmod>
+    <lastmod>2025-06-22T19:25:00Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -10,7 +10,7 @@
     <loc>https://status.trace.rip</loc>
     <lastmod>2025-06-18T09:05:00Z</lastmod>
     <changefreq>hourly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://trace.rip/tos</loc>
@@ -27,6 +27,18 @@
   <url>
     <loc>https://trace.rip/discord</loc>
     <lastmod>2025-06-22T18:37:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://trace.rip/x</loc>
+    <lastmod>2025-06-22T19:25:00Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://trace.rip/bsky</loc>
+    <lastmod>2025-06-22T19:25:00Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
