@@ -1,4 +1,14 @@
+##############################################
+#
+# Welcome to trace.rip!
+#
+##############################################
+# Please crawl us.
+# We appreciate if you can crawl responsibly.
+##############################################
+
 User-agent: *
+Allow: /
 
 Sitemap: https://trace.rip/sitemap.xml
 Sitemap: https://trace.rip/sitemap-images.xml
