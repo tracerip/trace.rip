@@ -2,6 +2,7 @@ let keySequence = "";
 const targetSequence1 = "wowo";
 const targetSequence2 = "amy";
 const targetSequence3 = "love";
+const targetSequence4 = "miku";
 
 document.addEventListener("keydown", function(event) {
     keySequence += event.key.toLowerCase();
@@ -22,6 +23,11 @@ document.addEventListener("keydown", function(event) {
 
     if (keySequence === targetSequence3) {
         window.location.href = "./love";
+        keySequence = "";
+    }
+
+    if (keySequence === targetSequence4) {
+        window.location.href = "./miku";
         keySequence = "";
     }
 });
