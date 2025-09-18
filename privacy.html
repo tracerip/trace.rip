@@ -15,12 +15,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url('https://trace.rip/wowo.gif') no-repeat center center fixed;
-            background-size: cover;
+            overflow: hidden; /* Prevent scrollbars */
             color: white;
             font-family: Arial, sans-serif;
+            position: relative; /* Position relative for z-index */
         }
-        .search-container {
+        video {
+            position: absolute; /* Position absolute to cover the entire background */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire area */
+            z-index: 0; /* Ensure it is behind the content */
+        }
+        .content {
+            position: relative; /* Position relative for z-index */
+            z-index: 1; /* Ensure it appears above the video */
             text-align: center;
             background: rgba(0, 0, 0, 0.5);
             padding: 20px;
@@ -47,18 +58,23 @@
     </style>
 </head>
 <body>
-    ## Privacy Policy:
-Because we prioritize anonymity we don't store emails, users, or passwords when creating an account. You will instead be generated a unique alphanumeric account ID ( similar to [mullvad](<https://mullvad.net/en/account/create>) ).
-
-If you lose this ID we will not be able to help you recover your account.
-
-What we don't log:
-- No logging of traffic
-- No logging of DNS requests
-- No logging of IP addresses
-- No logging of user bandwidth
-- No logging of usernames, emails, and passwords
-
-To make sure you get full privacy due to the webhost logging IPs themself (we cant stop that unless we switch to sketchy webhosts) its recommended to use a vpn or tor and follow basic OPSEC guidelines.
+    <video autoplay loop>
+        <source src="cat-edit.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <h1>Privacy Policy:</h1>
+        <p>Because we prioritize anonymity we don't store emails, users, or passwords when creating an account. You will instead be generated a unique alphanumeric account ID (similar to <a href="https://mullvad.net/en/account/create">mullvad</a>).</p>
+        <p>If you lose this ID we will not be able to help you recover your account.</p>
+        <p>What we don't log:</p>
+        <ul>
+            <li>No logging of traffic</li>
+            <li>No logging of DNS requests</li>
+            <li>No logging of IP addresses</li>
+            <li>No logging of user bandwidth</li>
+            <li>No logging of usernames, emails, and passwords</li>
+        </ul>
+        <p>To make sure you get full privacy due to the webhost logging IPs themselves (we can't stop that unless we switch to sketchy webhosts), it's recommended to use a VPN or Tor and follow basic OPSEC guidelines.</p>
+    </div>
 </body>
 </html>
