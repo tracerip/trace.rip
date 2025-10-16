@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Support trace.rip with cryptocurrency donations. We accept Bitcoin, Litecoin, and Ethereum.">
-  <meta name="keywords" content="donate, donation, crypto currency, bitcoin, litecoin, etherium, discord, scraper, spy.pet, roblox, vrchat, information, trace, tracerip, csint, osint, intelligence, investigation, data analysis, cyber security">
+  <meta name="description" content="Support trace.rip with cryptocurrency donations. We accept Bitcoin, Litecoin, Ethereum, Solana, Monero, and Tether.">
+  <meta name="keywords" content="donate, donation, crypto currency, bitcoin, litecoin, etherium, solana, monero, tether, discord, scraper, spy.pet, roblox, vrchat, information, trace, tracerip, csint, osint, intelligence, investigation, data analysis, cyber security">
   <meta name="author" content="trace.rip">
   <meta name="robots" content="index, follow">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,13 +13,13 @@
   
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="Donations | trace.rip">
-  <meta property="og:description" content="Support trace.rip with cryptocurrency donations. We accept Bitcoin, Litecoin, and Ethereum.">
+  <meta property="og:description" content="Support trace.rip with cryptocurrency donations. We accept Bitcoin, Litecoin, Ethereum, Solana, Monero, and Tether.">
   <meta property="og:url" content="https://trace.rip/donate">
   <meta property="og:type" content="website">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:title" content="Donations | trace.rip">
-  <meta name="twitter:description" content="Support trace.rip with cryptocurrency donations. We accept Bitcoin, Litecoin, and Ethereum.">
+  <meta name="twitter:description" content="Support trace.rip with cryptocurrency donations. We accept Bitcoin, Litecoin, Ethereum, Solana, Monero, and Tether.">
   
   <title>Donations | trace.rip</title>
 
@@ -40,7 +40,10 @@
               300: '#E9D5FF',
               200: '#F3E8FF',
               100: '#FAF5FF',
-            }
+            },
+            solana: '#9945FF',
+            monero: '#FF6600',
+            tether: '#50AF95'
           }
         }
       }
@@ -117,22 +120,35 @@
       width: 24px;
       height: 24px;
     }
+    
+    /* Responsive grid adjustments */
+    @media (min-width: 768px) {
+      .crypto-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .crypto-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body class="text-white min-h-screen flex flex-col">
   <div class="flex-grow flex items-center justify-center p-4">
-    <div class="max-w-4xl mx-auto w-full">
+    <div class="max-w-6xl mx-auto w-full">
       <div class="text-center mb-12">
         <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">
           Support Our Project
         </h1>
         <p class="text-lg text-gray-300 max-w-2xl mx-auto">
-          Your donations help us maintain and improve our services. We accept Bitcoin, Litecoin, and Ethereum.
+          Your donations help us maintain and improve our services. We accept Bitcoin, Litecoin, Ethereum, Solana, Monero, and Tether.
           All donations are greatly appreciated!
         </p>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div class="crypto-grid grid gap-6 mb-12">
         <!-- Bitcoin Card -->
         <div class="crypto-card bg-gray-900/50 rounded-xl p-6 flex flex-col items-center">
           <div class="mb-4 p-3 rounded-full bg-orange-500/20">
@@ -186,6 +202,69 @@
           <div class="w-full mb-4">
             <div class="address bg-gray-800/50 p-3 rounded-lg text-center break-all">
               0xfDB323871888dB6E47e58F043559fA9843740192
+            </div>
+          </div>
+          <button class="copy-btn w-full py-2 rounded-lg bg-purple-900/30 hover:bg-purple-800/30 flex items-center justify-center">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+            Copy Address
+          </button>
+        </div>
+        
+        <!-- Solana Card -->
+        <div class="crypto-card bg-gray-900/50 rounded-xl p-6 flex flex-col items-center">
+          <div class="mb-4 p-3 rounded-full bg-solana/20">
+            <svg class="svg-icon text-solana" viewBox="0 0 24 24" fill="currentColor">
+              <path d="m23.8764 18.0313-3.962 4.1393a.9201.9201 0 0 1-.306.2106.9407.9407 0 0 1-.367.0742H.4599a.4689.4689 0 0 1-.2522-.0733.4513.4513 0 0 1-.1696-.1962.4375.4375 0 0 1-.0314-.2545.4438.4438 0 0 1 .117-.2298l3.9649-4.1393a.92.92 0 0 1 .3052-.2102.9407.9407 0 0 1 .3658-.0746H23.54a.4692.4692 0 0 1 .2523.0734.4531.4531 0 0 1 .1697.196.438.438 0 0 1 .0313.2547.4442.4442 0 0 1-.1169.2297zm-3.962-8.3355a.9202.9202 0 0 0-.306-.2106.941.941 0 0 0-.367-.0742H.4599a.4687.4687 0 0 0-.2522.0734.4513.4513 0 0 0-.1696.1961.4376.4376 0 0 0-.0314.2546.444.444 0 0 0 .117.2297l3.9649 4.1394a.9204.9204 0 0 0 .3052.2102c.1154.049.24.0744.3658.0746H23.54a.469.469 0 0 0 .2523-.0734.453.453 0 0 0 .1697-.1961.4382.4382 0 0 0 .0313-.2546.4444.4444 0 0 0-.1169-.2297zM.46 6.7225h18.7815a.9411.9411 0 0 0 .367-.0742.9202.9202 0 0 0 .306-.2106l3.962-4.1394a.4442.4442 0 0 0 .117-.2297.4378.4378 0 0 0-.0314-.2546.453.453 0 0 0-.1697-.196.469.469 0 0 0-.2523-.0734H4.7596a.941.941 0 0 0-.3658.0745.9203.9203 0 0 0-.3052.2102L.1246 5.9687a.4438.4438 0 0 0-.1169.2295.4375.4375 0 0 0 .0312.2544.4512.4512 0 0 0 .1692.196.4689.4689 0 0 0 .2518.0739z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-solana">Solana (SOL)</h3>
+          <div class="w-full mb-4">
+            <div class="address bg-gray-800/50 p-3 rounded-lg text-center break-all">
+              Guv5uNAqoL6DRbyxKmqD8j45DZJ47KLn9gMvcNjxtAH8
+            </div>
+          </div>
+          <button class="copy-btn w-full py-2 rounded-lg bg-purple-900/30 hover:bg-purple-800/30 flex items-center justify-center">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+            Copy Address
+          </button>
+        </div>
+        
+        <!-- Monero Card -->
+        <div class="crypto-card bg-gray-900/50 rounded-xl p-6 flex flex-col items-center">
+          <div class="mb-4 p-3 rounded-full bg-monero/20">
+            <svg class="svg-icon text-monero" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.365 0 0 5.373 0 12.015c0 1.335.228 2.607.618 3.81h3.577V5.729L12 13.545l7.805-7.815v10.095h3.577c.389-1.203.618-2.475.618-3.81C24 5.375 18.635 0 12 0zm-1.788 15.307l-3.417-3.421v6.351H1.758C3.87 21.689 7.678 24 12 24s8.162-2.311 10.245-5.764h-5.04v-6.351l-3.386 3.421-1.788 1.79-1.814-1.79h-.005z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-monero">Monero (XMR)</h3>
+          <div class="w-full mb-4">
+            <div class="address bg-gray-800/50 p-3 rounded-lg text-center break-all">
+              43Q4qkbf7e4GjhFwo9UZbyiiEoH3RXiJ7Zq4cBwhT4sTKbxamJcKEqjFs9Wj6jXSv7HL8wfDqhXTn9KyTX3wPt4xCXNyMpQ
+            </div>
+          </div>
+          <button class="copy-btn w-full py-2 rounded-lg bg-purple-900/30 hover:bg-purple-800/30 flex items-center justify-center">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+            Copy Address
+          </button>
+        </div>
+        
+        <!-- Tether Card -->
+        <div class="crypto-card bg-gray-900/50 rounded-xl p-6 flex flex-col items-center">
+          <div class="mb-4 p-3 rounded-full bg-tether/20">
+            <svg class="svg-icon text-tether" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.7538 10.5176c0 .6251-2.2379 1.1483-5.2381 1.2812l.0028.0007c-.0848.0064-.5233.0325-1.5012.0325-.7778 0-1.33-.0233-1.5237-.0325-3.0059-.1322-5.2495-.6555-5.2495-1.2819s2.2436-1.149 5.2495-1.2834v2.0442c.1965.0142.7594.0474 1.5372.0474.9334 0 1.4008-.0389 1.4849-.0466V9.2356c2.9994.1337 5.2381.657 5.2381 1.282zm5.19.5466L12.1248 22.389a.1803.1803 0 0 1-.2496 0L.0562 11.0635a.1781.1781 0 0 1-.0382-.2079l4.3762-9.1921a.1767.1767 0 0 1 .1626-.1026h14.8878a.1768.1768 0 0 1 .1612.1032l4.3762 9.1922a.1782.1782 0 0 1-.0382.2079zm-4.478-.4038c0-.8068-2.5515-1.4799-5.9473-1.6369V7.195h4.186V4.4055H6.3076V7.195h4.1852v1.8286c-3.4018.1562-5.9601.83-5.9601 1.6376 0 .8075 2.5583 1.4806 5.9601 1.6376v5.8618h3.025v-5.8639c3.394-.1563 5.948-.8295 5.948-1.6363z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-tether">Tether (USDT)</h3>
+          <div class="w-full mb-4">
+            <div class="address bg-gray-800/50 p-3 rounded-lg text-center break-all">
+              0x829Efd2E6E67B166569A7701dAeBe86B639FE6eE
             </div>
           </div>
           <button class="copy-btn w-full py-2 rounded-lg bg-purple-900/30 hover:bg-purple-800/30 flex items-center justify-center">
@@ -263,7 +342,19 @@
         const addresses = [
           'bc1qkx7ndcefu2edvgazrtyam7wsa3tvrh4338ula5',
           'LXniy2B4aZpZLkDi4kkZ6RKzx5JHXrf1Gd',
-          '0xfDB323871888dB6E47e58F043559fA9843740192'
+          '0xfDB323871888dB6E47e58F043559fA9843740192',
+          'Guv5uNAqoL6DRbyxKmqD8j45DZJ47KLn9gMvcNjxtAH8',
+          '43Q4qkbf7e4GjhFwo9UZbyiiEoH3RXiJ7Zq4cBwhT4sTKbxamJcKEqjFs9Wj6jXSv7HL8wfDqhXTn9KyTX3wPt4xCXNyMpQ',
+          '0x829Efd2E6E67B166569A7701dAeBe86B639FE6eE'
+        ];
+        
+        const currencies = [
+          'Bitcoin', 
+          'Litecoin', 
+          'Ethereum', 
+          'Solana', 
+          'Monero', 
+          'Tether'
         ];
         
         const textarea = document.createElement('textarea');
@@ -276,7 +367,7 @@
         // Show notification
         const notification = document.getElementById('notification');
         const notificationText = document.getElementById('notification-text');
-        notificationText.textContent = `${['Bitcoin', 'Litecoin', 'Ethereum'][index]} address copied!`;
+        notificationText.textContent = `${currencies[index]} address copied!`;
         notification.classList.add('show');
         
         setTimeout(() => {
