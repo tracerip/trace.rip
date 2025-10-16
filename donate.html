@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Support trace.rip with cryptocurrency donations. We accept Bitcoin, Litecoin, and Ethereum.">
+  <meta name="keywords" content="donate, donation, crypto currency, bitcoin, litecoin, etherium, discord, scraper, spy.pet, roblox, vrchat, information, trace, tracerip, csint, osint, intelligence, investigation, data analysis, cyber security">
+  <meta name="author" content="trace.rip">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#9e5ec8">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Donations | trace.rip">
+  <meta property="og:description" content="Support trace.rip with cryptocurrency donations. We accept Bitcoin, Litecoin, and Ethereum.">
+  <meta property="og:url" content="https://trace.rip/donate">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:title" content="Donations | trace.rip">
+  <meta name="twitter:description" content="Support trace.rip with cryptocurrency donations. We accept Bitcoin, Litecoin, and Ethereum.">
+  
+  <title>Donations | trace.rip</title>
+
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: {
+              900: '#581C87',
+              800: '#7E22CE',
+              700: '#9333EA',
+              600: '#A855F7',
+              500: '#C084FC',
+              400: '#D8B4FE',
+              300: '#E9D5FF',
+              200: '#F3E8FF',
+              100: '#FAF5FF',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      min-height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .crypto-card {
+      transition: all 0.3s ease;
+      border: 1px solid rgba(147, 51, 234, 0.3);
+    }
+    
+    .crypto-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(147, 51, 234, 0.5);
+      border-color: rgba(147, 51, 234, 0.6);
+    }
+    
+    .copy-btn {
+      transition: all 0.2s ease;
+    }
+    
+    .copy-btn:hover {
+      background: rgba(147, 51, 234, 0.2);
+    }
+    
+    .copy-btn:active {
+      transform: scale(0.95);
+    }
+    
+    .address {
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+    
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: rgba(30, 41, 59, 0.9);
+      border-left: 4px solid #10B981;
+      color: #fff;
+      z-index: 1000;
+      transform: translateX(200%);
+      transition: transform 0.3s ease;
+    }
+    
+    .notification.show {
+      transform: translateX(0);
+    }
+    
+    .quick-links {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(147, 51, 234, 0.2);
+    }
+    
+    .footer {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      border-top: 1px solid rgba(147, 51, 234, 0.3);
+    }
+    
+    .svg-icon {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex flex-col">
+  <div class="flex-grow flex items-center justify-center p-4">
+    <div class="max-w-4xl mx-auto w-full">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">
+          Support Our Project
+        </h1>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+          Your donations help us maintain and improve our services. We accept Bitcoin, Litecoin, and Ethereum.
+          All donations are greatly appreciated!
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <!-- Bitcoin Card -->
+        <div class="crypto-card bg-gray-900/50 rounded-xl p-6 flex flex-col items-center">
+          <div class="mb-4 p-3 rounded-full bg-orange-500/20">
+            <svg class="svg-icon text-orange-400" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.638 14.904c-1.602 6.43-8.113 10.34-14.542 8.736C2.67 22.05-1.244 15.525.362 9.105 1.962 2.67 8.475-1.243 14.9.358c6.43 1.605 10.342 8.115 8.738 14.548v-.002zm-6.35-4.613c.24-1.59-.974-2.45-2.64-3.03l.54-2.153-1.315-.33-.525 2.107c-.345-.087-.705-.167-1.064-.25l.526-2.127-1.32-.33-.54 2.165c-.285-.067-.565-.132-.84-.2l-1.815-.45-.35 1.407s.975.225.955.236c.535.136.63.486.615.766l-1.477 5.92c-.075.166-.24.406-.614.314.015.02-.96-.24-.96-.24l-.66 1.51 1.71.426.93.242-.54 2.19 1.32.327.54-2.17c.36.1.705.19 1.05.273l-.51 2.154 1.32.33.545-2.19c2.24.427 3.93.257 4.64-1.774.57-1.637-.03-2.58-1.217-3.196.854-.193 1.5-.76 1.68-1.93h.01zm-3.01 4.22c-.404 1.64-3.157.75-4.05.53l.72-2.9c.896.23 3.757.67 3.33 2.37zm.41-4.24c-.37 1.49-2.662.735-3.405.55l.654-2.64c.744.18 3.137.524 2.75 2.084v.006z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-orange-300">Bitcoin (BTC)</h3>
+          <div class="w-full mb-4">
+            <div class="address bg-gray-800/50 p-3 rounded-lg text-center break-all">
+              bc1qkx7ndcefu2edvgazrtyam7wsa3tvrh4338ula5
+            </div>
+          </div>
+          <button class="copy-btn w-full py-2 rounded-lg bg-purple-900/30 hover:bg-purple-800/30 flex items-center justify-center">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+            Copy Address
+          </button>
+        </div>
+        
+        <!-- Litecoin Card -->
+        <div class="crypto-card bg-gray-900/50 rounded-xl p-6 flex flex-col items-center">
+          <div class="mb-4 p-3 rounded-full bg-gray-400/20">
+            <svg class="svg-icon text-gray-300" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0a12 12 0 1012 12A12 12 0 0012 0zm-.2617 3.6777h2.584a.3425.3425 0 01.33.4356l-2.0312 6.918 1.9062-.582-.4082 1.3847-1.9238.5605-1.248 4.213h6.6757a.3425.3425 0 01.3282.4374l-.582 2a.4586.4586 0 01-.4395.3301H6.7324l1.7227-5.8223-1.9063.5801.42-1.3613 1.9101-.58 2.4219-8.1798a.4557.4557 0 01.4375-.334Z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-gray-300">Litecoin (LTC)</h3>
+          <div class="w-full mb-4">
+            <div class="address bg-gray-800/50 p-3 rounded-lg text-center break-all">
+              LXniy2B4aZpZLkDi4kkZ6RKzx5JHXrf1Gd
+            </div>
+          </div>
+          <button class="copy-btn w-full py-2 rounded-lg bg-purple-900/30 hover:bg-purple-800/30 flex items-center justify-center">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+            Copy Address
+          </button>
+        </div>
+        
+        <!-- Ethereum Card -->
+        <div class="crypto-card bg-gray-900/50 rounded-xl p-6 flex flex-col items-center">
+          <div class="mb-4 p-3 rounded-full bg-blue-500/20">
+            <svg class="svg-icon text-blue-400" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.944 17.97L4.58 13.62 11.943 24l7.37-10.38-7.372 4.35h.003zM12.056 0L4.69 12.223l7.365 4.354 7.365-4.35L12.056 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3 text-blue-300">Ethereum (ETH)</h3>
+          <div class="w-full mb-4">
+            <div class="address bg-gray-800/50 p-3 rounded-lg text-center break-all">
+              0xfDB323871888dB6E47e58F043559fA9843740192
+            </div>
+          </div>
+          <button class="copy-btn w-full py-2 rounded-lg bg-purple-900/30 hover:bg-purple-800/30 flex items-center justify-center">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+            </svg>
+            Copy Address
+          </button>
+        </div>
+      </div>
+      
+      <div class="text-center text-gray-400 text-sm mb-8">
+        <p>All donations go directly to supporting our infrastructure and development efforts.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Quick Links -->
+  <div class="quick-links w-full py-6">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-xl font-semibold text-purple-300 mb-4 text-center">Quick Links</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+        <a href="./dav" class="block p-3 bg-gray-800/50 rounded-lg text-center hover:bg-purple-900/30 transition-colors">
+          <span class="font-mono text-purple-300">/dav</span>
+        </a>
+        <a href="./ironic" class="block p-3 bg-gray-800/50 rounded-lg text-center hover:bg-purple-900/30 transition-colors">
+          <span class="font-mono text-purple-300">/ironic</span>
+        </a>
+        <a href="./telegram" class="block p-3 bg-gray-800/50 rounded-lg text-center hover:bg-purple-900/30 transition-colors">
+          <span class="font-mono text-purple-300">/telegram</span>
+        </a>
+        <a href="./spit" class="block p-3 bg-gray-800/50 rounded-lg text-center hover:bg-purple-900/30 transition-colors">
+          <span class="font-mono text-purple-300">/spit</span>
+        </a>
+        <a href="./bsky" class="block p-3 bg-gray-800/50 rounded-lg text-center hover:bg-purple-900/30 transition-colors">
+          <span class="font-mono text-purple-300">/bsky</span>
+        </a>
+        <a href="https://archive.trace.rip" class="block p-3 bg-gray-800/50 rounded-lg text-center hover:bg-purple-900/30 transition-colors">
+          <span class="font-mono text-purple-300">/archive</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="footer w-full py-6">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4">
+      <div class="flex gap-4 text-sm text-gray-400">
+        <a href="./tos" class="hover:text-purple-300 transition-colors">Terms of Service</a>
+        <span class="opacity-50">|</span>
+        <a href="./privacy" class="hover:text-purple-300 transition-colors">Privacy Policy</a>
+      </div>
+      <div class="flex gap-4 text-gray-400">
+        <a href="./discord" class="hover:text-purple-300 transition-colors" aria-label="Discord">
+          <svg role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path fill="#5865F2" d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276c-.598.343-1.2205.6447-1.8733.8923a.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.1046 2.1568 2.4189 0 1.3333-.9555 2.419-2.1569 2.419zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.1046 2.1568 2.4189 0 1.3333-.946 2.419-2.1568 2.419Z"/></svg>
+        </a>
+        <a href="./telegram" target="_blank" rel="noopener noreferrer" class="hover:text-purple-300 transition-colors" aria-label="Telegram">
+          <svg role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Telegram</title><path fill="#26A5E4" d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </a>
+        <a href="./bsky" target="_blank" rel="noopener noreferrer" class="hover:text-purple-300 transition-colors" aria-label="Bluesky">
+          <svg role="img" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Bluesky</title><path fill="#0285FF" d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <div id="notification" class="notification">
+    <span id="notification-text">Address copied to clipboard!</span>
+  </div>
+  
+  <script>
+    // Copy to clipboard functionality
+    document.querySelectorAll('.copy-btn').forEach((button, index) => {
+      button.addEventListener('click', () => {
+        const addresses = [
+          'bc1qkx7ndcefu2edvgazrtyam7wsa3tvrh4338ula5',
+          'LXniy2B4aZpZLkDi4kkZ6RKzx5JHXrf1Gd',
+          '0xfDB323871888dB6E47e58F043559fA9843740192'
+        ];
+        
+        const textarea = document.createElement('textarea');
+        textarea.value = addresses[index];
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        
+        // Show notification
+        const notification = document.getElementById('notification');
+        const notificationText = document.getElementById('notification-text');
+        notificationText.textContent = `${['Bitcoin', 'Litecoin', 'Ethereum'][index]} address copied!`;
+        notification.classList.add('show');
+        
+        setTimeout(() => {
+          notification.classList.remove('show');
+        }, 3000);
+      });
+    });
+  </script>
+</body>
+</html>
