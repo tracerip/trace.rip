@@ -7,7 +7,9 @@
 # We appreciate if you can crawl responsibly.
 ##############################################
 
-User-agent: *
+User-Agent: *
+crawl-delay: 1
+Content-signal: search=yes,ai-train=yes
 Allow: /
 
 Sitemap: https://trace.rip/sitemap.xml
